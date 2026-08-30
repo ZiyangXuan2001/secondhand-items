@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="二手物品清单：查看物品、照片、视频、价格和出售状态。">
+  <title>二手物品清单</title>
+  <style>
+    :root{color-scheme:light;--bg:#f7f8f4;--ink:#293c32;--muted:#788176;--line:#e0e5db;--green:#365e47;--pale:#e9efdf}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,a:focus-visible,.table-scroll:focus-visible{outline:3px solid #8fa87c;outline-offset:3px}button:disabled{cursor:default;opacity:.35}header{border-bottom:1px solid var(--line);background:#ffffffb0}.top{max-width:1440px;padding:20px 32px;margin:auto;display:flex;justify-content:space-between;align-items:center}.brand{display:flex;align-items:center;gap:11px;font-size:20px;font-weight:650;letter-spacing:1px}.brand-mark{height:35px;width:35px;display:grid;place-items:center;border-radius:10px;background:var(--green);color:#fff;font-size:25px;font-weight:400}.top-note{font-size:12px;color:var(--muted)}main{max-width:1440px;margin:auto;padding:32px 32px 24px}.heading{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:24px}.eyebrow{font-size:11px;letter-spacing:2px;color:#8b997b;margin:0 0 8px}h1{font-size:28px;line-height:1.35;margin:0;font-weight:600;letter-spacing:1px}h1 span{color:#a9bd86}.subtitle{color:var(--muted);margin:10px 0 0;font-size:13px}.total{color:var(--muted);white-space:nowrap}.total strong{color:var(--green);font-size:25px;font-weight:500;margin-right:5px}.toolbar{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:20px}.filters{display:flex;gap:8px}.filter{border:0;color:var(--muted);background:transparent;border-radius:8px;padding:9px 14px;white-space:nowrap}.filter[aria-pressed="true"]{background:var(--pale);color:var(--green);font-weight:600}.filter span{font-size:11px;margin-left:7px;opacity:.8}.search{width:260px;border:1px solid var(--line);padding:9px 13px;background:#fff;border-radius:8px;color:var(--ink)}
+    .table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:11px;background:#fff}.item-table{width:100%;min-width:1240px;border-collapse:collapse;table-layout:fixed}.item-table th{text-align:left;background:#eef2e8;color:#68745f;font-size:12px;font-weight:550;padding:14px 18px;letter-spacing:.5px}.item-table td{padding:23px 18px;vertical-align:top;border-top:1px solid var(--line);overflow-wrap:anywhere}.item-row{transition:opacity .2s}.item-row.sold{opacity:.48;background:#eff1eb}.item-row.sold:hover,.item-row.sold:focus-within{opacity:.8}.item-name{font-size:15px;font-weight:600;margin:0 0 11px;line-height:1.65}.item-id{font-size:10px;color:#969e8e;margin:9px 0 0}.badge{display:inline-block;font-size:10px;padding:3px 8px;background:#edf4e7;color:#62804c;border-radius:5px}.sold .badge{background:#e1e4dc;color:#5e6857}.description{font-size:13px;white-space:pre-wrap;margin:0;line-height:1.9}.placeholder{color:#9aa292;font-size:12px}.price{font-size:23px;font-weight:600;letter-spacing:-.5px;line-height:1.3;white-space:nowrap}.price small{display:block;font-size:10px;font-weight:400;letter-spacing:1px;color:var(--muted);margin-top:6px}.media-strip{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 8px}.cover{width:110px;height:100px;flex:none;background:#eef0e9;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:0;border:1px solid #e5e9df;border-radius:7px;color:#8b9680}.cover img,.cover video{width:100%;height:100%;object-fit:contain}.no-media{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;font-size:10px}.no-media svg{width:26px;height:26px}.media-hint{font-size:10px;color:var(--muted);margin-top:3px}.play-label{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none}.play-label span{width:30px;height:30px;display:grid;place-items:center;background:#fffe;border-radius:50%;color:var(--green);font-size:14px}.reference-entry+.reference-entry{border-top:1px dashed var(--line);margin-top:12px;padding-top:12px}.reference-text{margin:0;font-size:12px;line-height:1.85;white-space:pre-wrap}.reference-meta{font-size:10px;color:#909984;margin:5px 0 0}.reference-link{color:var(--green);font-size:11px;text-underline-offset:3px}.unverified{color:#997748}.mobile-hint{display:none;font-size:11px;color:var(--muted);margin:0 0 10px}
+    .empty{text-align:center;padding:55px 20px;min-height:280px;display:flex;align-items:center;justify-content:center;flex-direction:column}.empty-icon{width:60px;height:60px;border-radius:18px;background:#f0f4e8;display:grid;place-items:center;color:#8d9f79;margin-bottom:18px}.empty-icon svg{width:29px;height:29px}.empty h2{font-size:20px;margin:0 0 10px;font-weight:550}.empty p{max-width:410px;color:var(--muted);margin:0;line-height:1.9;font-size:13px}.error{color:#9d4432!important}.retry{margin-top:18px;border:1px solid var(--line);padding:8px 18px;border-radius:8px;background:var(--pale);color:var(--green)}footer{display:flex;justify-content:space-between;gap:15px;color:#959d8c;font-size:11px;border-top:1px solid var(--line);margin-top:28px;padding-top:18px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .official-label{position:absolute;bottom:3px;left:3px;padding:1px 5px;border-radius:3px;background:#ffffffed;color:#536448;font-size:9px}.viewer-caption{margin:10px 0 0;font-size:11px;color:var(--muted)}.viewer-caption a{color:var(--green);text-underline-offset:3px}
+    dialog{width:min(860px,calc(100% - 32px));max-height:calc(100dvh - 32px);border:1px solid var(--line);border-radius:15px;padding:20px;background:#fafbf7;color:var(--ink)}dialog::backdrop{background:#182219b8}.viewer-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}.viewer-heading h2{font-size:17px;margin:0;overflow-wrap:anywhere}.icon-button{border:1px solid var(--line);background:#fff;min-width:36px;height:36px;border-radius:8px;font-size:20px;color:var(--green)}.viewer-stage{background:#edf0e8;border-radius:9px;min-height:200px;display:flex;align-items:center;justify-content:center}.viewer-stage img,.viewer-stage video{display:block;max-width:100%;max-height:65dvh;object-fit:contain}.viewer-stage a{padding:30px;color:var(--green)}.viewer-nav{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:16px}.viewer-nav span{font-size:12px;color:var(--muted)}
+    @media(max-width:1304px){.mobile-hint{display:block}}@media(max-width:560px){.top{padding:18px 20px}.brand{font-size:18px}.top-note{font-size:10px}main{padding:24px 16px 20px}h1{font-size:25px}.subtitle{font-size:12px}.toolbar{flex-direction:column;align-items:stretch}.filters{justify-content:space-between}.filter{padding:8px 10px;flex:1}.search{width:100%}footer{font-size:10px}.heading{gap:10px}.total{font-size:12px}.total strong{font-size:22px}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header><div class="top"><div class="brand"><span class="brand-mark" aria-hidden="true">↗</span>二手物品簿</div><span class="top-note">闲置有价 · 好物流转</span></div></header>
+  <main>
+    <section class="heading"><div><p class="eyebrow">让空间轻一点</p><h1>我的二手清单<span>.</span></h1><p class="subtitle">一件物品一行，售价、描述和参考信息分开记录。</p></div><p class="total"><strong id="total">—</strong>件物品</p></section>
+    <div class="toolbar"><div class="filters" role="group" aria-label="按出售状态筛选"><button class="filter" data-filter="all" aria-pressed="true">全部<span id="count-all">—</span></button><button class="filter" data-filter="available" aria-pressed="false">在售<span id="count-available">—</span></button><button class="filter" data-filter="sold" aria-pressed="false">已售出<span id="count-sold">—</span></button></div><label class="sr-only" for="search">搜索名称或描述</label><input class="search" id="search" type="search" placeholder="搜索名称或描述…" autocomplete="off"></div>
+    <p id="result-announcement" class="sr-only" role="status"></p>
+    <p class="mobile-hint">左右滑动查看全部列 →</p>
+    <div class="table-scroll" role="region" aria-label="物品表格，可左右滚动" tabindex="0">
+      <table class="item-table"><caption class="sr-only">二手物品清单：名字、价格、取货时间、人工描述、视频或照片、参考信息</caption>
+        <colgroup><col style="width:20%"><col style="width:10%"><col style="width:12%"><col style="width:18%"><col style="width:18%"><col style="width:22%"></colgroup>
+        <thead><tr><th scope="col">名字</th><th scope="col">价格</th><th scope="col">取货时间</th><th scope="col">人工描述</th><th scope="col">视频 / 照片</th><th scope="col">Reference · 参考信息</th></tr></thead>
+        <tbody id="items" aria-busy="true"><tr><td colspan="6"><div class="empty"><p>正在读取清单…</p></div></td></tr></tbody>
+      </table>
+    </div>
+    <noscript><p>请启用 JavaScript 查看物品清单。</p></noscript>
+    <footer><span>每件闲置，都有下一站。</span><span>已售出物品会变淡，记录仍然保留。</span></footer>
+  </main>
+  <dialog id="viewer" aria-labelledby="viewer-title"><div class="viewer-heading"><h2 id="viewer-title"></h2><button id="close-viewer" class="icon-button" aria-label="关闭预览">×</button></div><div class="viewer-stage" id="viewer-stage"></div><p class="viewer-caption" id="viewer-caption"></p><div class="viewer-nav"><button class="icon-button" id="previous" aria-label="上一个媒体">‹</button><span id="viewer-position"></span><button class="icon-button" id="next" aria-label="下一个媒体">›</button></div></dialog>
+  <script>
+    'use strict';
+    let items = [], filter = 'all', activeItem = null, mediaIndex = 0;
+    const $ = id => document.getElementById(id);
+    const packageIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 5v8l-9 5-9-5V8l9-5Z M3 8l9 5 9-5 M12 13v8 M7.5 5.5l9 5v4"/></svg>';
+    function node(tag, className, text) { const el = document.createElement(tag); if (className) el.className = className; if (text !== undefined) el.textContent = text; return el; }
+    function safeUrl(value) {
+      if (typeof value !== 'string' || !value.trim()) return null;
+      try { const url = new URL(value, location.href); return ['https:', 'http:'].includes(url.protocol) ? url.href : null; } catch { return null; }
+    }
+    function checkData(data) {
+      if (!Array.isArray(data)) throw new Error('清单必须是数组');
+      const ids = new Set();
+      for (const item of data) {
+        if (!item || typeof item.id !== 'string' || !item.id || ids.has(item.id) || typeof item.name !== 'string' || !item.name.trim()) throw new Error('物品名称或编号无效');
+        ids.add(item.id);
+        if (!['available','sold'].includes(item.status) || !(item.price === null || (typeof item.price === 'number' && Number.isFinite(item.price) && item.price >= 0))) throw new Error('物品价格或状态无效');
+        if (!(item.price === null && item.currency === null) && (typeof item.currency !== 'string' || !/^[A-Z]{3}$/.test(item.currency))) throw new Error('币种无效');
+        if (item.description !== undefined && typeof item.description !== 'string') throw new Error('描述无效');
+        if (item.pickup !== undefined) {
+          const pickup = item.pickup;
+          if (!pickup || !['pending','anytime','scheduled'].includes(pickup.status)) throw new Error('取货状态无效');
+          if (pickup.status === 'scheduled' ? !validPickupDate(pickup.earliest_date) : pickup.earliest_date != null) throw new Error('最早取货日期无效');
+        }
+        if (item.references !== undefined && (!Array.isArray(item.references) || item.references.some(r => !r || typeof r.text !== 'string' || typeof r.source !== 'string' || typeof r.verified !== 'boolean' || (r.url != null && (typeof r.url !== 'string' || !/^https?:\/\//i.test(r.url) || !safeUrl(r.url)))))) throw new Error('参考信息无效');
+        if (!Array.isArray(item.media) || item.media.some(m => !m || !['image','video'].includes(m.type) || !safeUrl(m.src))) throw new Error('媒体信息无效');
+      }
+      return data;
+    }
+    function emptyState(title, message) {
+      const box = node('div', 'empty'); const icon = node('span','empty-icon'); icon.innerHTML = packageIcon;
+      box.append(icon, node('h2','',title), node('p','',message)); const row = node('tr'); const cell = node('td'); cell.colSpan = 6; cell.append(box); row.append(cell); $('items').replaceChildren(row); return box;
+    }
+    function formatPrice(item) {
+      if (item.price === null) return '待定价';
+      return new Intl.NumberFormat('zh-CN',{style:'currency', currency:item.currency, minimumFractionDigits:0, maximumFractionDigits:2}).format(item.price);
+    }
+    function validPickupDate(value) {
+      if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+      const date = new Date(value + 'T00:00:00Z');
+      return Number.isFinite(date.getTime()) && date.toISOString().slice(0,10) === value;
+    }
+    function pickupText(pickup) {
+      if (!pickup || pickup.status === 'pending') return '待确认';
+      if (pickup.status === 'anytime') return '随时取';
+      return '最早 ' + pickup.earliest_date + ' 取';
+    }
+    function mediaFallback(container, text = '暂无照片或视频') {
+      container.replaceChildren(); const placeholder = node('span','no-media'); placeholder.innerHTML = packageIcon; placeholder.append(node('span','',text)); container.append(placeholder);
+    }
+    function itemRow(item) {
+      const row = node('tr','item-row' + (item.status === 'sold' ? ' sold' : ''));
+      const nameCell = node('td');
+      nameCell.append(node('h2','item-name',item.name),node('span','badge',item.status === 'sold' ? '✓ 已售出' : '在售'),node('p','item-id',item.id));
+      const priceCell = node('td'); const price = node('div','price',formatPrice(item));
+      if (item.price !== null) price.append(node('small','',item.currency)); priceCell.append(price);
+      const pickupCell = node('td');
+      pickupCell.append(node('p',(!item.pickup || item.pickup.status === 'pending') ? 'description placeholder' : 'description',pickupText(item.pickup)));
+      const descriptionCell = node('td'); descriptionCell.append(node('p',item.description ? 'description' : 'description placeholder',item.description || '待补充'));
+      const mediaCell = node('td'); const strip = node('div','media-strip');
+      item.media.forEach((file,index) => {
+        const cover = node('button','cover'); cover.type = 'button'; cover.setAttribute('aria-label','查看 ' + item.name + ' 的第 ' + (index + 1) + ' 个' + (file.type === 'video' ? '视频' : '照片'));
+        const media = node(file.type === 'video' ? 'video' : 'img'); media.src = safeUrl(file.src);
+        if (file.type === 'image' && file.rotation === 180) media.style.transform = 'rotate(180deg)';
+        if (file.type === 'image') { media.alt = file.alt || item.name; media.loading = 'lazy'; media.decoding = 'async'; }
+        else { media.preload = 'metadata'; media.muted = true; media.playsInline = true; if (safeUrl(file.poster)) media.poster = safeUrl(file.poster); const play = node('span','play-label'); play.append(node('span','','▶')); cover.append(play); }
+        media.addEventListener('error', () => mediaFallback(cover,'点击打开文件'), { once:true }); cover.prepend(media);
+        if (file.official) cover.append(node('span','official-label','官方图'));
+        cover.addEventListener('click', () => { activeItem = item; mediaIndex = index; showMedia(); $('viewer').showModal(); }); strip.append(cover);
+      });
+      if (item.media.length) { mediaCell.append(strip); const images = item.media.filter(m => m.type === 'image').length; const videos = item.media.length - images; mediaCell.append(node('div','media-hint',[images ? images + ' 张照片' : '',videos ? videos + ' 个视频' : ''].filter(Boolean).join(' · ') + ' · 点击查看')); }
+      else mediaCell.append(node('span','placeholder','暂无照片或视频'));
+      const referenceCell = node('td');
+      if (item.references?.length) item.references.forEach(reference => {
+        const entry = node('div','reference-entry'); if (reference.text) entry.append(node('p','reference-text',reference.text));
+        if (reference.text) { const meta = node('p','reference-meta',reference.source + ' · '); meta.append(node('span',reference.verified ? '' : 'unverified',reference.verified ? '已核实' : '未核实')); entry.append(meta); }
+        if (reference.url && /^https?:\/\//i.test(reference.url) && safeUrl(reference.url)) { const link = node('a','reference-link',reference.text ? '查看来源 ↗' : (reference.source || '产品链接') + ' ↗'); link.href = safeUrl(reference.url); link.target = '_blank'; link.rel = 'noopener noreferrer'; entry.append(link); }
+        referenceCell.append(entry);
+      }); else referenceCell.append(node('span','placeholder','暂无参考'));
+      row.append(nameCell,priceCell,pickupCell,descriptionCell,mediaCell,referenceCell); return row;
+    }
+    function render() {
+      const query = $('search').value.trim().toLocaleLowerCase();
+      const visible = items.filter(item => (filter === 'all' || item.status === filter) && (item.name + ' ' + (item.description || '')).toLocaleLowerCase().includes(query)).sort((a,b) => Number(a.status === 'sold') - Number(b.status === 'sold'));
+      $('total').textContent = items.length; $('count-all').textContent = items.length;
+      $('count-available').textContent = items.filter(i => i.status === 'available').length; $('count-sold').textContent = items.filter(i => i.status === 'sold').length;
+      $('result-announcement').textContent = '显示 ' + visible.length + ' 件物品';
+      if (visible.length) $('items').replaceChildren(...visible.map(itemRow));
+      else if (!items.length) emptyState('等你的第一件闲置','现在还没有物品。把照片或视频、物品名称和价格发给助手，就可以开始整理了。');
+      else emptyState('这里暂时没有物品', query ? '换个关键词，或选择「全部」看看。' : filter === 'sold' ? '售出后会保留在这里，整行自动变淡。' : '这个分类暂时为空，可以切换到「全部」。');
+    }
+    function showMedia() {
+      const media = activeItem.media[mediaIndex]; const stage = $('viewer-stage');
+      const caption = $('viewer-caption'); caption.replaceChildren();
+      if (media.official) { caption.append(document.createTextNode('官方产品图，非本件实拍。')); if (media.source_url && /^https?:\/\//i.test(media.source_url) && safeUrl(media.source_url)) { const source = node('a','',media.source_name || '图片来源'); source.href = safeUrl(media.source_url); source.target = '_blank'; source.rel = 'noopener noreferrer'; caption.append(source); } }
+      $('viewer-title').textContent = activeItem.name; $('viewer-position').textContent = (mediaIndex + 1) + ' / ' + activeItem.media.length;
+      $('previous').disabled = mediaIndex === 0; $('next').disabled = mediaIndex === activeItem.media.length - 1;
+      const el = node(media.type === 'video' ? 'video' : 'img'); el.src = safeUrl(media.src);
+      if (media.type === 'image' && media.rotation === 180) el.style.transform = 'rotate(180deg)';
+      if(media.type === 'video') { el.controls = true; el.playsInline = true; el.preload = 'metadata'; if(safeUrl(media.poster)) el.poster = safeUrl(media.poster); }
+      else el.alt = media.alt || activeItem.name;
+      el.addEventListener('error',() => { const a = node('a','','浏览器无法预览，点击打开原文件'); a.href = safeUrl(media.src); a.target = '_blank'; a.rel = 'noopener noreferrer'; stage.replaceChildren(a); },{once:true});
+      stage.replaceChildren(el);
+    }
+    async function load() {
+      $('items').setAttribute('aria-busy','true');
+      try { const response = await fetch('./data/items.json',{cache:'no-store'}); if(!response.ok) throw new Error('读取失败'); items = checkData(await response.json()); render(); }
+      catch (error) { const box = emptyState('暂时无法读取清单', location.protocol === 'file:' ? '请通过网站地址访问，或让助手启动本地预览。直接双击 HTML 无法读取清单。' : '请检查网络，或让助手检查物品清单文件，然后重试。'); box.querySelector('p').classList.add('error'); const retry = node('button','retry','重新读取'); retry.addEventListener('click',load); box.append(retry); console.error(error); }
+      finally { $('items').setAttribute('aria-busy','false'); }
+    }
+    document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click',() => {filter = button.dataset.filter; document.querySelectorAll('[data-filter]').forEach(b => b.setAttribute('aria-pressed',String(b === button))); render();}));
+    $('search').addEventListener('input',render);
+    $('close-viewer').addEventListener('click',() => $('viewer').close());
+    $('viewer').addEventListener('close',() => { $('viewer-stage').replaceChildren(); activeItem = null; });
+    $('previous').addEventListener('click',() => { if(mediaIndex > 0) { mediaIndex--; showMedia(); } });
+    $('next').addEventListener('click',() => { if(mediaIndex < activeItem.media.length - 1) { mediaIndex++; showMedia(); } });
+    $('viewer').addEventListener('keydown',e => { if(['VIDEO','BUTTON','A'].includes(e.target.tagName)) return; if(e.key === 'ArrowLeft') $('previous').click(); if(e.key === 'ArrowRight') $('next').click(); });
+    load();
+  </script>
+</body>
+</html>

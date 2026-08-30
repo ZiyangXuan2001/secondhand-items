@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+.env
+.env.*
+
+# Private media stays local; never publish screen/account details.
+local-private/
+media/item-001/demo.mp4
+media/item-001/demo-poster.jpg
