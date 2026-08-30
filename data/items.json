@@ -363,7 +363,7 @@
     "currency": "USD",
     "status": "available",
     "pickup": {
-      "status": "pending",
+      "status": "anytime",
       "earliest_date": null
     },
     "description": "hype park 公寓冬天需要，因为有些小公寓是集体供暖，有时候房间会很冷，可以提前准备一下。",
@@ -400,7 +400,7 @@
     "currency": "USD",
     "status": "available",
     "pickup": {
-      "status": "pending",
+      "status": "anytime",
       "earliest_date": null
     },
     "description": "很重要，尤其是在 hype park mac property 的公寓。他们每次新住户入住前会粉刷地面和墙，味道很大。赠送空气滤芯。",
@@ -437,7 +437,7 @@
     "currency": "USD",
     "status": "available",
     "pickup": {
-      "status": "pending",
+      "status": "anytime",
       "earliest_date": null
     },
     "description": "赠送空气滤芯。",
@@ -479,7 +479,7 @@
     "currency": "USD",
     "status": "available",
     "pickup": {
-      "status": "pending",
+      "status": "anytime",
       "earliest_date": null
     },
     "description": "只含一张餐桌和两把椅子，长凳已经没有了。官方图展示的是原套装，图中的长凳不包含在本次出售中。",
@@ -518,7 +518,7 @@
     "description": "",
     "negotiable": false,
     "pickup": {
-      "status": "pending",
+      "status": "anytime",
       "earliest_date": null
     },
     "media": [
@@ -556,7 +556,7 @@
     "description": "",
     "negotiable": false,
     "pickup": {
-      "status": "pending",
+      "status": "anytime",
       "earliest_date": null
     },
     "media": [
