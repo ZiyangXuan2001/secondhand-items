@@ -1,0 +1,325 @@
+[
+  {
+    "id": "item-001",
+    "name": "LG UltraFine 23.7 英寸显示器（24MD4KL-B）",
+    "price": 300,
+    "currency": "USD",
+    "status": "available",
+    "description": "完美适配 MacBook，一根type c 连显示器充电放音乐，适合回家插上即用，查了最近二手市场的成交价大概在360刀左右。",
+    "media": [
+      {
+        "type": "image",
+        "src": "media/item-001/official.jpg",
+        "alt": "LG 24MD4KL-B 官方产品图（非实拍）",
+        "official": true,
+        "source_name": "Best Buy 产品页",
+        "source_url": "https://www.bestbuy.com/product/lg-ultrafine-24-ips-led-4k-uhd-monitor-thunderbolt-black/JXTZZL2SXH/sku/6357406",
+        "original_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6357/6357406_sd.jpg"
+      },
+      {
+        "type": "image",
+        "src": "media/item-001/box.jpg",
+        "alt": "LG UltraFine 24MD4KL-B 显示器包装盒及型号标签",
+        "rotation": 180
+      }
+    ],
+    "references": [
+      {
+        "text": "eBay 已售出记录：5 月 24 日售出的同型号翻新机，页面显示 $399.99，成色为 Excellent - Refurbished，含一年保修；仅作翻新机价格参考，与个人二手出售条件不同。",
+        "source": "eBay 已售出 · 翻新机",
+        "verified": true,
+        "url": "https://www.ebay.com/itm/366016859616"
+      },
+      {
+        "text": "Best Buy 同型号零售页面标价 $699.99，显示无货；仅作零售标价参考，不代表当前可购新机价或二手成交价。",
+        "source": "Best Buy 美国",
+        "verified": true,
+        "url": "https://www.bestbuy.com/product/lg-ultrafine-24-ips-led-4k-uhd-monitor-thunderbolt-black/JXTZZL2SXH/sku/6357406/reviews"
+      }
+    ],
+    "pickup": {
+      "status": "anytime",
+      "earliest_date": null
+    }
+  },
+  {
+    "id": "item-002",
+    "name": "Insignia 便携式制冰机（NS-IMP26SL0）",
+    "price": 40,
+    "currency": "USD",
+    "status": "available",
+    "description": "hype park 小公寓冰箱大部分没有制冰机，可以准备一个。",
+    "media": [
+      {
+        "type": "image",
+        "src": "media/item-002/official.jpg",
+        "alt": "Insignia NS-IMP26SL0 官方产品图（非实拍）",
+        "official": true,
+        "source_name": "Best Buy 产品页",
+        "source_url": "https://www.bestbuy.com/product/insignia-portable-ice-maker-with-auto-shut-off-silver/6331583",
+        "original_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6331/6331583cv13d.jpg"
+      },
+      {
+        "type": "image",
+        "src": "media/item-002/photo-1.jpg",
+        "alt": "Insignia 制冰机实拍：上盖与操作面板"
+      },
+      {
+        "type": "image",
+        "src": "media/item-002/photo-2.jpg",
+        "alt": "Insignia 制冰机背面型号标签：NS-IMP26SL0"
+      }
+    ],
+    "references": [
+      {
+        "text": "Best Buy 美国页面：参考标价（Comp. Value）$125.99；清仓标价 $29.99，但显示无货。以上为零售页面标价，不代表当前可购新机价或二手成交价。",
+        "source": "Best Buy 美国",
+        "verified": true,
+        "url": "https://www.bestbuy.com/product/insignia-portable-ice-maker-with-auto-shut-off-silver/J2FPJKGVWR/sku/6331583/reviews"
+      },
+      {
+        "text": "同型号商品主页面显示：不再提供全新商品。",
+        "source": "Best Buy 美国",
+        "verified": true,
+        "url": "https://www.bestbuy.com/product/insignia-portable-ice-maker-with-auto-shut-off-silver/6331583"
+      }
+    ],
+    "pickup": {
+      "status": "anytime",
+      "earliest_date": null
+    }
+  },
+  {
+    "id": "item-003",
+    "name": "SANSUI 27 英寸 FHD 显示器（S27X3AF）",
+    "price": 55,
+    "currency": "USD",
+    "status": "available",
+    "description": "",
+    "media": [
+      {
+        "type": "image",
+        "src": "media/item-003/official.jpg",
+        "alt": "SANSUI S27X3AF 官方产品图（非实拍）",
+        "official": true,
+        "source_name": "Walmart 产品页",
+        "source_url": "https://www.walmart.com/ip/5613174774",
+        "original_url": "https://i5.walmartimages.com/seo/SANSUI-27-Monitor-IPS-100Hz-Computer-Monitor-Full-HD-1080P-with-HDMI-VGA-Interface-Eye-Care-Frameless-VESA-S27X3AF-HDMI-Cable-Included_f98c65e6-8f61-493b-96f6-a0bf266f5f02.daf8fe5c28e0bded447390f6d6e9c258.jpeg"
+      },
+      {
+        "type": "image",
+        "src": "media/item-003/back-label.jpg",
+        "alt": "SANSUI S27X3AF 显示器背面实拍与型号标签"
+      }
+    ],
+    "references": [
+      {
+        "text": "历史零售价格参考：DealNews 记录 2024 年 11 月 Walmart 标价约 $100、促销价 $85；活动已结束。这不是已确认的官方建议零售价，也不是二手成交价。",
+        "source": "DealNews 历史促销记录",
+        "verified": true,
+        "url": "https://www.dealnews.com/products/Sansui/Sansui-27-1080-p-IPS-100-Hz-Free-Sync-Monitor/484923.html"
+      },
+      {
+        "text": "Walmart 同型号 S27X3AF 页面标价 $79.99，查询时显示缺货；仅作新机标价参考，不代表当前可购买价格或二手成交价。",
+        "source": "Walmart 商品页面",
+        "verified": true,
+        "url": "https://www.walmart.com/ip/5613174774"
+      }
+    ],
+    "pickup": {
+      "status": "anytime",
+      "earliest_date": null
+    }
+  },
+  {
+    "id": "item-004",
+    "name": "Thames & Kosmos 望远镜（677016）",
+    "price": 25,
+    "currency": "USD",
+    "status": "available",
+    "description": "",
+    "media": [
+      {
+        "type": "image",
+        "src": "media/item-004/official.jpg",
+        "alt": "Thames & Kosmos 677016 望远镜官方产品图（非实拍）",
+        "official": true,
+        "source_name": "Thames & Kosmos 美国官网",
+        "source_url": "https://thamesandkosmos.com/products/the-thames-kosmos-telescope",
+        "original_url": "https://cdn.shopify.com/s/files/1/0104/6331/3977/files/1-EST-Telescope_box_model.jpg?v=1775148599"
+      },
+      {
+        "type": "image",
+        "src": "media/item-004/box.jpg",
+        "alt": "Thames & Kosmos 望远镜包装盒实拍"
+      },
+      {
+        "type": "image",
+        "src": "media/item-004/label.jpg",
+        "alt": "望远镜包装盒型号与 $59.99 价签实拍"
+      }
+    ],
+    "references": [
+      {
+        "text": "美国官网同型号 677016 标价 $49.95，目前显示售罄；仅作新机零售标价参考，不是二手成交价。",
+        "source": "Thames & Kosmos 美国官网",
+        "verified": true,
+        "url": "https://thamesandkosmos.com/products/the-thames-kosmos-telescope"
+      },
+      {
+        "text": "包装盒实拍价签为 $59.99；仅代表盒上零售标签，不代表实际购买价或当前售价。",
+        "source": "用户提供的价签实拍",
+        "verified": true,
+        "url": null
+      }
+    ],
+    "pickup": {
+      "status": "anytime",
+      "earliest_date": null
+    }
+  },
+  {
+    "id": "item-005",
+    "name": "Hasbro Risk 策略桌游（B7404）",
+    "price": 17,
+    "currency": "USD",
+    "status": "available",
+    "description": "",
+    "media": [
+      {
+        "type": "image",
+        "src": "media/item-005/official.jpg",
+        "alt": "Hasbro Risk B7404 官方产品图（非实拍）",
+        "official": true,
+        "source_name": "Hasbro 官网",
+        "source_url": "https://consumercare.hasbro.com/en-gb/product/risk-game/2C7C6F52-5056-9047-F5DD-EB8AC273BA4C",
+        "original_url": "https://www.hasbro.com/common/productimages/en_GB/2c7c6f5250569047f5ddeb8ac273ba4c/0abb043136a156dd70f0d5c34cca7e7982999592.jpg"
+      },
+      {
+        "type": "image",
+        "src": "media/item-005/box.jpg",
+        "alt": "Hasbro Risk B7404 包装盒实拍"
+      }
+    ],
+    "references": [
+      {
+        "text": "",
+        "source": "Hasbro 官网",
+        "verified": true,
+        "url": "https://consumercare.hasbro.com/en-gb/product/risk-game/2C7C6F52-5056-9047-F5DD-EB8AC273BA4C"
+      }
+    ],
+    "pickup": {
+      "status": "anytime",
+      "earliest_date": null
+    }
+  },
+  {
+    "id": "item-006",
+    "name": "Ticket to Ride 铁路环游桌游（美国基础版）",
+    "price": 28,
+    "currency": "USD",
+    "status": "available",
+    "description": "",
+    "media": [
+      {
+        "type": "image",
+        "src": "media/item-006/official.jpg",
+        "alt": "Ticket to Ride 铁路环游桌游（美国基础版） 官方产品图（非实拍）",
+        "official": true,
+        "source_name": "Grandrabbit’s Toy Shoppe 产品页",
+        "source_url": "https://grtoys.com/products/ticket-to-ride",
+        "original_url": "https://cdn.shopify.com/s/files/1/0683/2288/5937/files/tgtg_ho22_do7201.jpg?v=1759963807"
+      },
+      {
+        "type": "image",
+        "src": "media/item-006/box.jpg",
+        "alt": "Ticket to Ride 铁路环游桌游（美国基础版） 包装盒实拍"
+      }
+    ],
+    "references": [
+      {
+        "text": "",
+        "source": "Grandrabbit’s Toy Shoppe 产品页",
+        "verified": true,
+        "url": "https://grtoys.com/products/ticket-to-ride"
+      }
+    ],
+    "pickup": {
+      "status": "anytime",
+      "earliest_date": null
+    }
+  },
+  {
+    "id": "item-007",
+    "name": "Monopoly 大富翁（Target 版）",
+    "price": 15,
+    "currency": "USD",
+    "status": "available",
+    "description": "",
+    "media": [
+      {
+        "type": "image",
+        "src": "media/item-007/official.png",
+        "alt": "Monopoly 大富翁（Target 版） 官方产品图（非实拍）",
+        "official": true,
+        "source_name": "Target 官方供图（Tinybeans 刊载）",
+        "source_url": "https://tinybeans.com/target-monopoly-game/",
+        "original_url": "https://tinybeans.com/wp-content/uploads/2021/06/Target-Monopoly_Game-Board.png"
+      },
+      {
+        "type": "image",
+        "src": "media/item-007/box.jpg",
+        "alt": "Monopoly 大富翁（Target 版） 包装盒实拍"
+      }
+    ],
+    "references": [
+      {
+        "text": "",
+        "source": "Target 官方产品介绍",
+        "verified": true,
+        "url": "https://corporate.target.com/news-features/article/2021/06/monopoly"
+      }
+    ],
+    "pickup": {
+      "status": "anytime",
+      "earliest_date": null
+    }
+  },
+  {
+    "id": "item-008",
+    "name": "Monopoly 大富翁（Secret Vault 金库版，F5023）",
+    "price": 15,
+    "currency": "USD",
+    "status": "available",
+    "description": "",
+    "media": [
+      {
+        "type": "image",
+        "src": "media/item-008/official.jpg",
+        "alt": "Monopoly 大富翁（Secret Vault 金库版，F5023） 官方产品图（非实拍）",
+        "official": true,
+        "source_name": "Hasbro 官网",
+        "source_url": "https://consumercare.hasbro.com/en-us/product/monopoly-secret-vault-board-game-for-kids-ages-8-and-up-family-board-game-for-2-6-players-includes-vault/F7EE1F60-3C3C-427D-8BA8-27AD12021A8F",
+        "original_url": "https://www.hasbro.com/common/productimages/en_US/F7EE1F603C3C427D8BA827AD12021A8F/e7b9333a4d4a199c8c5cfdb112bcde4ddd5c16f2.jpg"
+      },
+      {
+        "type": "image",
+        "src": "media/item-008/box.jpg",
+        "alt": "Monopoly 大富翁（Secret Vault 金库版，F5023） 包装盒实拍"
+      }
+    ],
+    "references": [
+      {
+        "text": "",
+        "source": "Hasbro 官网",
+        "verified": true,
+        "url": "https://consumercare.hasbro.com/en-us/product/monopoly-secret-vault-board-game-for-kids-ages-8-and-up-family-board-game-for-2-6-players-includes-vault/F7EE1F60-3C3C-427D-8BA8-27AD12021A8F"
+      }
+    ],
+    "pickup": {
+      "status": "anytime",
+      "earliest_date": null
+    }
+  }
+]
