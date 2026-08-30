@@ -181,7 +181,7 @@
   {
     "id": "item-005",
     "name": "Hasbro Risk 策略桌游（B7404）",
-    "price": 17,
+    "price": 17.0,
     "currency": "USD",
     "status": "available",
     "description": "",
@@ -321,5 +321,186 @@
       "status": "anytime",
       "earliest_date": null
     }
+  },
+  {
+    "id": "item-009",
+    "name": "HEXANT 88 键电子琴（木色，型号待确认）",
+    "price": 150,
+    "currency": "USD",
+    "status": "available",
+    "pickup": {
+      "status": "pending",
+      "earliest_date": null
+    },
+    "description": "琴腿坏了，需要自行配腿。",
+    "media": [
+      {
+        "type": "image",
+        "src": "media/item-009/front.jpg",
+        "alt": "电子琴实拍：木色琴身、黑色板式支架与三踏板；对应官方图待补"
+      },
+      {
+        "type": "image",
+        "src": "media/item-009/product-screenshot.jpg",
+        "alt": "用户提供的 Amazon 商品截图：细腿支架款，与实拍支架不同，版本待核对"
+      }
+    ],
+    "references": [
+      {
+        "text": "用户提供的 Amazon 截图标价 $279.99，另列运费 $69.99；选中 Oak / Piano with Bench。截图为细腿支架，实拍为黑色板式支架，具体版本待确认，暂不能视作本机同款价格。",
+        "source": "用户提供的 Amazon 截图（版本待核对）",
+        "verified": false,
+        "url": null
+      }
+    ]
+  },
+  {
+    "id": "item-010",
+    "name": "Amazon Basics 1500W 取暖器（B07V4FNHCD，黑色）",
+    "price": 15,
+    "currency": "USD",
+    "status": "available",
+    "pickup": {
+      "status": "pending",
+      "earliest_date": null
+    },
+    "description": "hype park 公寓冬天需要，因为有些小公寓是集体供暖，有时候房间会很冷，可以提前准备一下。",
+    "media": [
+      {
+        "type": "image",
+        "src": "media/item-010/official.jpg",
+        "alt": "Amazon Basics B07V4FNHCD 黑色取暖器官方产品图（非实拍）",
+        "official": true,
+        "source_name": "Amazon 官方商品页面",
+        "source_url": "https://www.amazon.com/dp/B07V4FNHCD",
+        "original_url": "https://m.media-amazon.com/images/I/812NQSkC6zL._AC_SL1500_.jpg"
+      },
+      {
+        "type": "image",
+        "src": "media/item-010/label.jpg",
+        "alt": "Amazon Basics 取暖器背面型号与功率标签实拍"
+      }
+    ],
+    "references": [
+      {
+        "text": "",
+        "source": "Amazon 同型号产品链接",
+        "verified": true,
+        "url": "https://www.amazon.com/dp/B07V4FNHCD"
+      }
+    ]
+  },
+  {
+    "id": "item-011",
+    "name": "Levoit Core 200S 空气净化器（白色）",
+    "price": 30,
+    "currency": "USD",
+    "status": "available",
+    "pickup": {
+      "status": "pending",
+      "earliest_date": null
+    },
+    "description": "很重要，尤其是在 hype park mac property 的公寓。他们每次新住户入住前会粉刷地面和墙，味道很大。赠送空气滤芯。",
+    "media": [
+      {
+        "type": "image",
+        "src": "media/item-011/official.png",
+        "alt": "Levoit Core 200S 白色空气净化器官方产品图（非实拍；手机为功能示意）",
+        "official": true,
+        "source_name": "Levoit 英国官网",
+        "source_url": "https://levoit.co.uk/products/levoit-core-200s-smart-air-purifier",
+        "original_url": "https://cdn.shopify.com/s/files/1/0674/7488/2801/files/core_200s.png?v=1739776976"
+      },
+      {
+        "type": "image",
+        "src": "media/item-011/label.jpg",
+        "alt": "Levoit Core 200S 白色空气净化器型号标签实拍（120V）"
+      }
+    ],
+    "references": [
+      {
+        "text": "Core 200S 官方产品信息（英国站）；此链接仅供外观与功能参考，实拍机器标签为美国 120V 版本。",
+        "source": "Levoit 官网",
+        "verified": true,
+        "url": "https://levoit.co.uk/products/levoit-core-200s-smart-air-purifier"
+      }
+    ]
+  },
+  {
+    "id": "item-012",
+    "name": "WINIX 5300-2 空气净化器（灰色）",
+    "price": 55,
+    "currency": "USD",
+    "status": "available",
+    "pickup": {
+      "status": "pending",
+      "earliest_date": null
+    },
+    "description": "赠送空气滤芯。",
+    "media": [
+      {
+        "type": "image",
+        "src": "media/item-012/official.jpg",
+        "alt": "WINIX 5300-2 灰色空气净化器官方产品图（非实拍）",
+        "official": true,
+        "source_name": "Best Buy 产品页",
+        "source_url": "https://www.bestbuy.com/product/winix-tower-355-sq-ft-air-purifier-gray/BGWGGP86QW/sku/5241200",
+        "original_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5241/5241200ld.jpg"
+      },
+      {
+        "type": "image",
+        "src": "media/item-012/front.jpg",
+        "alt": "WINIX 5300-2 空气净化器机身与控制面板实拍"
+      },
+      {
+        "type": "image",
+        "src": "media/item-012/label.jpg",
+        "alt": "WINIX 5300-2 背面型号及 120V 电源标签实拍"
+      }
+    ],
+    "references": [
+      {
+        "text": "Best Buy 美国同型号 5300-2 页面标价 $199.99，显示无货，商品主页面已不再提供全新商品；仅作新机零售标价参考，不是二手成交价。",
+        "source": "Best Buy 美国",
+        "verified": true,
+        "url": "https://www.bestbuy.com/product/winix-tower-355-sq-ft-air-purifier-gray/BGWGGP86QW/sku/5241200/reviews"
+      }
+    ]
+  },
+  {
+    "id": "item-013",
+    "name": "Tangkula 餐桌＋2 把椅子（灰色，不含长凳）",
+    "price": 45,
+    "currency": "USD",
+    "status": "available",
+    "pickup": {
+      "status": "pending",
+      "earliest_date": null
+    },
+    "description": "只含一张餐桌和两把椅子，长凳已经没有了。官方图展示的是原套装，图中的长凳不包含在本次出售中。",
+    "media": [
+      {
+        "type": "image",
+        "src": "media/item-013/official.jpg",
+        "alt": "Tangkula 灰色餐桌套装官方图（非实拍；本次仅售桌子和两把椅子，不含图中长凳）",
+        "official": true,
+        "source_name": "Tangkula 官网",
+        "source_url": "https://www.tangkula.com/products/tangkula-4-piece-dining-table-set-kitchen-table-with-bench-and-chairs?variant=44860209856745",
+        "original_url": "https://cdn.shopify.com/s/files/1/0613/8514/6601/files/image_1_c431339b-7305-46ab-8342-9e91dd02fd25.jpg?v=1685966163"
+      },
+      {
+        "type": "image",
+        "src": "media/item-013/product-screenshot.jpg",
+        "alt": "用户提供的 Tangkula 灰色餐桌 Amazon 产品页截图（非实拍；不含长凳）"
+      }
+    ],
+    "references": [
+      {
+        "text": "",
+        "source": "Tangkula 原套装产品链接",
+        "verified": true,
+        "url": "https://www.tangkula.com/products/tangkula-4-piece-dining-table-set-kitchen-table-with-bench-and-chairs?variant=44860209856745"
+      }
+    ]
   }
 ]
