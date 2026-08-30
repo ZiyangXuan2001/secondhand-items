@@ -40,7 +40,8 @@
     "pickup": {
       "status": "anytime",
       "earliest_date": null
-    }
+    },
+    "category": "工作用品"
   },
   {
     "id": "item-002",
@@ -87,7 +88,8 @@
     "pickup": {
       "status": "anytime",
       "earliest_date": null
-    }
+    },
+    "category": "生活电器"
   },
   {
     "id": "item-003",
@@ -129,7 +131,8 @@
     "pickup": {
       "status": "anytime",
       "earliest_date": null
-    }
+    },
+    "category": "工作用品"
   },
   {
     "id": "item-004",
@@ -176,7 +179,8 @@
     "pickup": {
       "status": "anytime",
       "earliest_date": null
-    }
+    },
+    "category": "桌游玩具"
   },
   {
     "id": "item-005",
@@ -212,7 +216,8 @@
     "pickup": {
       "status": "anytime",
       "earliest_date": null
-    }
+    },
+    "category": "桌游玩具"
   },
   {
     "id": "item-006",
@@ -248,7 +253,8 @@
     "pickup": {
       "status": "anytime",
       "earliest_date": null
-    }
+    },
+    "category": "桌游玩具"
   },
   {
     "id": "item-007",
@@ -284,7 +290,8 @@
     "pickup": {
       "status": "anytime",
       "earliest_date": null
-    }
+    },
+    "category": "桌游玩具"
   },
   {
     "id": "item-008",
@@ -320,7 +327,8 @@
     "pickup": {
       "status": "anytime",
       "earliest_date": null
-    }
+    },
+    "category": "桌游玩具"
   },
   {
     "id": "item-009",
@@ -352,7 +360,8 @@
         "verified": false,
         "url": null
       }
-    ]
+    ],
+    "category": "乐器"
   },
   {
     "id": "item-010",
@@ -388,7 +397,8 @@
         "verified": true,
         "url": "https://www.amazon.com/dp/B07V4FNHCD"
       }
-    ]
+    ],
+    "category": "生活电器"
   },
   {
     "id": "item-011",
@@ -424,7 +434,8 @@
         "verified": true,
         "url": "https://levoit.co.uk/products/levoit-core-200s-smart-air-purifier"
       }
-    ]
+    ],
+    "category": "生活电器"
   },
   {
     "id": "item-012",
@@ -465,7 +476,8 @@
         "verified": true,
         "url": "https://www.bestbuy.com/product/winix-tower-355-sq-ft-air-purifier-gray/BGWGGP86QW/sku/5241200/reviews"
       }
-    ]
+    ],
+    "category": "生活电器"
   },
   {
     "id": "item-013",
@@ -501,6 +513,70 @@
         "verified": true,
         "url": "https://www.tangkula.com/products/tangkula-4-piece-dining-table-set-kitchen-table-with-bench-and-chairs?variant=44860209856745"
       }
-    ]
+    ],
+    "category": "家具收纳"
+  },
+  {
+    "id": "item-014",
+    "name": "Eyteenokk 三层酒架（棕色）",
+    "price": 20,
+    "currency": "USD",
+    "status": "available",
+    "description": "",
+    "negotiable": false,
+    "pickup": {
+      "status": "pending",
+      "earliest_date": null
+    },
+    "media": [
+      {
+        "type": "image",
+        "src": "media/item-014/official.jpg",
+        "alt": "Eyteenokk 三层酒架官方产品图（非实拍；酒瓶、杯具等为陈列示意）",
+        "official": true,
+        "source_name": "Amazon 商品页面",
+        "source_url": "https://www.amazon.com/dp/B0CPP43NWF",
+        "original_url": "https://m.media-amazon.com/images/I/7190f3tiKdL._AC_SL1500_.jpg"
+      },
+      {
+        "type": "image",
+        "src": "media/item-014/product-screenshot.jpg",
+        "alt": "用户提供的 Eyteenokk 三层酒架 Amazon 商品页截图（非实拍）"
+      }
+    ],
+    "references": [
+      {
+        "text": "",
+        "source": "Amazon 产品链接",
+        "verified": true,
+        "url": "https://www.amazon.com/dp/B0CPP43NWF"
+      }
+    ],
+    "category": "家具收纳"
+  },
+  {
+    "id": "item-015",
+    "name": "YUFAM 三层窄边桌（带充电插座，棕色）",
+    "price": 10,
+    "currency": "USD",
+    "status": "available",
+    "description": "",
+    "negotiable": false,
+    "pickup": {
+      "status": "pending",
+      "earliest_date": null
+    },
+    "media": [
+      {
+        "type": "image",
+        "src": "media/item-015/product-screenshot.jpg",
+        "alt": "YUFAM 棕色三层窄边桌官方产品页截图（用户提供，非实拍；灯具等为陈列示意）",
+        "official": true,
+        "source_name": "用户提供的 Amazon 官方产品图截图",
+        "source_url": null
+      }
+    ],
+    "references": [],
+    "category": "家具收纳"
   }
 ]
