@@ -333,11 +333,11 @@
   {
     "id": "item-009",
     "name": "HEXANT 88 键电子琴（木色，型号待确认）",
-    "price": 150,
+    "price": 135,
     "currency": "USD",
     "status": "available",
     "pickup": {
-      "status": "pending",
+      "status": "anytime",
       "earliest_date": null
     },
     "description": "琴腿坏了，需要自行配腿。",
@@ -353,14 +353,7 @@
         "alt": "用户提供的 Amazon 商品截图：细腿支架款，与实拍支架不同，版本待核对"
       }
     ],
-    "references": [
-      {
-        "text": "用户提供的 Amazon 截图标价 $279.99，另列运费 $69.99；选中 Oak / Piano with Bench。截图为细腿支架，实拍为黑色板式支架，具体版本待确认，暂不能视作本机同款价格。",
-        "source": "用户提供的 Amazon 截图（版本待核对）",
-        "verified": false,
-        "url": null
-      }
-    ],
+    "references": [],
     "category": "乐器"
   },
   {
