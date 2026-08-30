@@ -9,6 +9,10 @@
     :root{color-scheme:light;--bg:#f7f8f4;--ink:#293c32;--muted:#788176;--line:#e0e5db;--green:#365e47;--pale:#e9efdf}
     *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,a:focus-visible,.table-scroll:focus-visible{outline:3px solid #8fa87c;outline-offset:3px}button:disabled{cursor:default;opacity:.35}header{border-bottom:1px solid var(--line);background:#ffffffb0}.top{max-width:1440px;padding:20px 32px;margin:auto;display:flex;justify-content:space-between;align-items:center}.brand{display:flex;align-items:center;gap:11px;font-size:20px;font-weight:650;letter-spacing:1px}.brand-mark{height:35px;width:35px;display:grid;place-items:center;border-radius:10px;background:var(--green);color:#fff;font-size:25px;font-weight:400}.top-note{font-size:12px;color:var(--muted)}main{max-width:1440px;margin:auto;padding:32px 32px 24px}.heading{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:24px}.eyebrow{font-size:11px;letter-spacing:2px;color:#8b997b;margin:0 0 8px}h1{font-size:28px;line-height:1.35;margin:0;font-weight:600;letter-spacing:1px}h1 span{color:#a9bd86}.subtitle{color:var(--muted);margin:10px 0 0;font-size:13px}.total{color:var(--muted);white-space:nowrap}.total strong{color:var(--green);font-size:25px;font-weight:500;margin-right:5px}.toolbar{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:20px}.filters{display:flex;gap:8px}.filter{border:0;color:var(--muted);background:transparent;border-radius:8px;padding:9px 14px;white-space:nowrap}.filter[aria-pressed="true"]{background:var(--pale);color:var(--green);font-weight:600}.filter span{font-size:11px;margin-left:7px;opacity:.8}.search{width:260px;border:1px solid var(--line);padding:9px 13px;background:#fff;border-radius:8px;color:var(--ink)}
     .table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:11px;background:#fff}.item-table{width:100%;min-width:1240px;border-collapse:collapse;table-layout:fixed}.item-table th{text-align:left;background:#eef2e8;color:#68745f;font-size:12px;font-weight:550;padding:14px 18px;letter-spacing:.5px}.item-table td{padding:23px 18px;vertical-align:top;border-top:1px solid var(--line);overflow-wrap:anywhere}.item-row{transition:opacity .2s}.item-row.sold{opacity:.48;background:#eff1eb}.item-row.sold:hover,.item-row.sold:focus-within{opacity:.8}.item-name{font-size:15px;font-weight:600;margin:0 0 11px;line-height:1.65}.item-id{font-size:10px;color:#969e8e;margin:9px 0 0}.badge{display:inline-block;font-size:10px;padding:3px 8px;background:#edf4e7;color:#62804c;border-radius:5px}.sold .badge{background:#e1e4dc;color:#5e6857}.description{font-size:13px;white-space:pre-wrap;margin:0;line-height:1.9}.placeholder{color:#9aa292;font-size:12px}.price{font-size:23px;font-weight:600;letter-spacing:-.5px;line-height:1.3;white-space:nowrap}.price small{display:block;font-size:10px;font-weight:400;letter-spacing:1px;color:var(--muted);margin-top:6px}.media-strip{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 8px}.cover{width:110px;height:100px;flex:none;background:#eef0e9;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:0;border:1px solid #e5e9df;border-radius:7px;color:#8b9680}.cover img,.cover video{width:100%;height:100%;object-fit:contain}.no-media{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;font-size:10px}.no-media svg{width:26px;height:26px}.media-hint{font-size:10px;color:var(--muted);margin-top:3px}.play-label{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none}.play-label span{width:30px;height:30px;display:grid;place-items:center;background:#fffe;border-radius:50%;color:var(--green);font-size:14px}.reference-entry+.reference-entry{border-top:1px dashed var(--line);margin-top:12px;padding-top:12px}.reference-text{margin:0;font-size:12px;line-height:1.85;white-space:pre-wrap}.reference-meta{font-size:10px;color:#909984;margin:5px 0 0}.reference-link{color:var(--green);font-size:11px;text-underline-offset:3px}.unverified{color:#997748}.mobile-hint{display:none;font-size:11px;color:var(--muted);margin:0 0 10px}
+    .category-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 14px}.category-caption{font-size:12px;color:var(--muted);margin-right:4px}.category-filter{border:1px solid var(--line);border-radius:20px;background:#fff;color:#607069;padding:6px 12px;font-size:12px;white-space:nowrap}.category-filter span{margin-left:7px;color:#869186;font-size:11px}.category-filter[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}.category-filter[aria-pressed="true"] span{color:#e0eadb}.item-labels{display:flex;gap:6px;flex-wrap:wrap;align-items:center}.category-tag{display:inline-block;border-radius:5px;padding:3px 8px;background:#edf1f6;color:#52677d;font-size:10px}.category-note{margin:-4px 0 16px;color:var(--muted);font-size:11px}
+    [data-category-color="work"]{--category-color:#1e40af;--category-bg:#eff6ff;--category-border:#bfdbfe}[data-category-color="appliances"]{--category-color:#0f766e;--category-bg:#f0fdfa;--category-border:#99f6e4}[data-category-color="furniture"]{--category-color:#92400e;--category-bg:#fffbeb;--category-border:#fde68a}[data-category-color="games"]{--category-color:#6d28d9;--category-bg:#f5f3ff;--category-border:#ddd6fe}[data-category-color="music"]{--category-color:#9d174d;--category-bg:#fdf2f8;--category-border:#fbcfe8}[data-category-color="other"]{--category-color:#475569;--category-bg:#f1f5f9;--category-border:#cbd5e1}
+    .category-filter[data-category-color]{background:var(--category-bg);color:var(--category-color);border-color:var(--category-border)}.category-filter[data-category-color] span{color:var(--category-color)}.category-filter[data-category-color][aria-pressed="true"]{background:var(--category-color);border-color:var(--category-color);color:#fff}.category-filter[data-category-color][aria-pressed="true"] span{color:#fff}.category-filter[data-category-color]::before,.category-tag::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:currentColor;margin-right:6px;vertical-align:1px}.category-tag{color:var(--category-color,#475569);background:var(--category-bg,#f1f5f9);border:1px solid var(--category-border,#cbd5e1);font-weight:600}.item-row td:first-child{border-left:3px solid var(--category-color,var(--line))}
+    .negotiable-badge{display:inline-block;margin-left:8px;padding:2px 7px;border-radius:5px;background:#dcfce7;color:#166534;border:1px solid #bbf7d0;font-size:11px;font-weight:600;line-height:1.6;vertical-align:middle;white-space:nowrap}
     .empty{text-align:center;padding:55px 20px;min-height:280px;display:flex;align-items:center;justify-content:center;flex-direction:column}.empty-icon{width:60px;height:60px;border-radius:18px;background:#f0f4e8;display:grid;place-items:center;color:#8d9f79;margin-bottom:18px}.empty-icon svg{width:29px;height:29px}.empty h2{font-size:20px;margin:0 0 10px;font-weight:550}.empty p{max-width:410px;color:var(--muted);margin:0;line-height:1.9;font-size:13px}.error{color:#9d4432!important}.retry{margin-top:18px;border:1px solid var(--line);padding:8px 18px;border-radius:8px;background:var(--pale);color:var(--green)}footer{display:flex;justify-content:space-between;gap:15px;color:#959d8c;font-size:11px;border-top:1px solid var(--line);margin-top:28px;padding-top:18px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
     .official-label{position:absolute;bottom:3px;left:3px;padding:1px 5px;border-radius:3px;background:#ffffffed;color:#536448;font-size:9px}.viewer-caption{margin:10px 0 0;font-size:11px;color:var(--muted)}.viewer-caption a{color:var(--green);text-underline-offset:3px}
     dialog{width:min(860px,calc(100% - 32px));max-height:calc(100dvh - 32px);border:1px solid var(--line);border-radius:15px;padding:20px;background:#fafbf7;color:var(--ink)}dialog::backdrop{background:#182219b8}.viewer-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}.viewer-heading h2{font-size:17px;margin:0;overflow-wrap:anywhere}.icon-button{border:1px solid var(--line);background:#fff;min-width:36px;height:36px;border-radius:8px;font-size:20px;color:var(--green)}.viewer-stage{background:#edf0e8;border-radius:9px;min-height:200px;display:flex;align-items:center;justify-content:center}.viewer-stage img,.viewer-stage video{display:block;max-width:100%;max-height:65dvh;object-fit:contain}.viewer-stage a{padding:30px;color:var(--green)}.viewer-nav{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:16px}.viewer-nav span{font-size:12px;color:var(--muted)}
@@ -19,6 +23,8 @@
   <header><div class="top"><div class="brand"><span class="brand-mark" aria-hidden="true">↗</span>二手物品簿</div><span class="top-note">闲置有价 · 好物流转</span></div></header>
   <main>
     <section class="heading"><div><p class="eyebrow">让空间轻一点</p><h1>我的二手清单<span>.</span></h1><p class="subtitle">一件物品一行，售价、描述和参考信息分开记录。</p></div><p class="total"><strong id="total">—</strong>件物品</p></section>
+    <div class="category-bar" id="category-filters" role="group" aria-label="按物品类别筛选"></div>
+    <p class="category-note">同类物品排在一起，点击分类只看需要的物品。</p>
     <div class="toolbar"><div class="filters" role="group" aria-label="按出售状态筛选"><button class="filter" data-filter="all" aria-pressed="true">全部<span id="count-all">—</span></button><button class="filter" data-filter="available" aria-pressed="false">在售<span id="count-available">—</span></button><button class="filter" data-filter="sold" aria-pressed="false">已售出<span id="count-sold">—</span></button></div><label class="sr-only" for="search">搜索名称或描述</label><input class="search" id="search" type="search" placeholder="搜索名称或描述…" autocomplete="off"></div>
     <p id="result-announcement" class="sr-only" role="status"></p>
     <p class="mobile-hint">左右滑动查看全部列 →</p>
@@ -35,8 +41,23 @@
   <dialog id="viewer" aria-labelledby="viewer-title"><div class="viewer-heading"><h2 id="viewer-title"></h2><button id="close-viewer" class="icon-button" aria-label="关闭预览">×</button></div><div class="viewer-stage" id="viewer-stage"></div><p class="viewer-caption" id="viewer-caption"></p><div class="viewer-nav"><button class="icon-button" id="previous" aria-label="上一个媒体">‹</button><span id="viewer-position"></span><button class="icon-button" id="next" aria-label="下一个媒体">›</button></div></dialog>
   <script>
     'use strict';
-    let items = [], filter = 'all', activeItem = null, mediaIndex = 0;
+    let items = [], filter = 'all', categoryFilter = 'all', activeItem = null, mediaIndex = 0;
     const $ = id => document.getElementById(id);
+    const categoryOrder = ['工作用品','生活电器','家具收纳','桌游玩具','乐器','其他'];
+    const categoryColors = {'工作用品':'work','生活电器':'appliances','家具收纳':'furniture','桌游玩具':'games','乐器':'music','其他':'other'};
+    const categoryOf = item => item.category || '其他';
+    function setupCategoryFilters() {
+      const labels = ['all', ...categoryOrder.filter(c => items.some(item => categoryOf(item) === c))];
+      if (!labels.includes(categoryFilter)) categoryFilter = 'all';
+      $('category-filters').replaceChildren(node('span','category-caption','分类'));
+      for (const value of labels) {
+        const button = node('button','category-filter',value === 'all' ? '全部分类' : value);
+        if (value !== 'all') button.dataset.categoryColor = categoryColors[value];
+        button.type = 'button'; button.dataset.category = value; button.append(node('span','category-count'));
+        button.addEventListener('click', () => { categoryFilter = value; render(); });
+        $('category-filters').append(button);
+      }
+    }
     const packageIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 5v8l-9 5-9-5V8l9-5Z M3 8l9 5 9-5 M12 13v8 M7.5 5.5l9 5v4"/></svg>';
     function node(tag, className, text) { const el = document.createElement(tag); if (className) el.className = className; if (text !== undefined) el.textContent = text; return el; }
     function safeUrl(value) {
@@ -51,6 +72,8 @@
         ids.add(item.id);
         if (!['available','sold'].includes(item.status) || !(item.price === null || (typeof item.price === 'number' && Number.isFinite(item.price) && item.price >= 0))) throw new Error('物品价格或状态无效');
         if (!(item.price === null && item.currency === null) && (typeof item.currency !== 'string' || !/^[A-Z]{3}$/.test(item.currency))) throw new Error('币种无效');
+        if (item.category !== undefined && !categoryOrder.includes(item.category)) throw new Error('物品类别无效');
+        if (item.negotiable !== undefined && typeof item.negotiable !== 'boolean') throw new Error('可议价标记必须为布尔值');
         if (item.description !== undefined && typeof item.description !== 'string') throw new Error('描述无效');
         if (item.pickup !== undefined) {
           const pickup = item.pickup;
@@ -85,8 +108,13 @@
     }
     function itemRow(item) {
       const row = node('tr','item-row' + (item.status === 'sold' ? ' sold' : ''));
+      row.dataset.categoryColor = categoryColors[categoryOf(item)];
       const nameCell = node('td');
-      nameCell.append(node('h2','item-name',item.name),node('span','badge',item.status === 'sold' ? '✓ 已售出' : '在售'),node('p','item-id',item.id));
+      const name = node('h2','item-name',item.name);
+      if (item.negotiable === true && item.status === 'available') name.append(node('span','negotiable-badge','可议价'));
+      const labels = node('div','item-labels');
+      labels.append(node('span','category-tag',categoryOf(item)),node('span','badge',item.status === 'sold' ? '✓ 已售出' : '在售'));
+      nameCell.append(name,labels,node('p','item-id',item.id));
       const priceCell = node('td'); const price = node('div','price',formatPrice(item));
       if (item.price !== null) price.append(node('small','',item.currency)); priceCell.append(price);
       const pickupCell = node('td');
@@ -116,13 +144,20 @@
     }
     function render() {
       const query = $('search').value.trim().toLocaleLowerCase();
-      const visible = items.filter(item => (filter === 'all' || item.status === filter) && (item.name + ' ' + (item.description || '')).toLocaleLowerCase().includes(query)).sort((a,b) => Number(a.status === 'sold') - Number(b.status === 'sold'));
+      const matchesQuery = item => (item.name + ' ' + categoryOf(item) + ' ' + (item.description || '')).toLocaleLowerCase().includes(query);
+      const candidates = items.filter(item => (filter === 'all' || item.status === filter) && matchesQuery(item));
+      const visible = candidates.filter(item => categoryFilter === 'all' || categoryOf(item) === categoryFilter).sort((a,b) => Number(a.status === 'sold') - Number(b.status === 'sold') || categoryOrder.indexOf(categoryOf(a)) - categoryOrder.indexOf(categoryOf(b)));
+      document.querySelectorAll('[data-category]').forEach(button => {
+        const value = button.dataset.category;
+        button.setAttribute('aria-pressed', String(value === categoryFilter));
+        button.querySelector('.category-count').textContent = candidates.filter(item => value === 'all' || categoryOf(item) === value).length;
+      });
       $('total').textContent = items.length; $('count-all').textContent = items.length;
       $('count-available').textContent = items.filter(i => i.status === 'available').length; $('count-sold').textContent = items.filter(i => i.status === 'sold').length;
       $('result-announcement').textContent = '显示 ' + visible.length + ' 件物品';
       if (visible.length) $('items').replaceChildren(...visible.map(itemRow));
       else if (!items.length) emptyState('等你的第一件闲置','现在还没有物品。把照片或视频、物品名称和价格发给助手，就可以开始整理了。');
-      else emptyState('这里暂时没有物品', query ? '换个关键词，或选择「全部」看看。' : filter === 'sold' ? '售出后会保留在这里，整行自动变淡。' : '这个分类暂时为空，可以切换到「全部」。');
+      else emptyState('这里暂时没有物品', query ? '换个关键词，或切换「全部分类」和「全部」状态看看。' : filter === 'sold' ? '售出后会保留在这里，整行自动变淡。' : '这个分类暂时为空，可以切换到「全部」。');
     }
     function showMedia() {
       const media = activeItem.media[mediaIndex]; const stage = $('viewer-stage');
@@ -139,7 +174,7 @@
     }
     async function load() {
       $('items').setAttribute('aria-busy','true');
-      try { const response = await fetch('./data/items.json',{cache:'no-store'}); if(!response.ok) throw new Error('读取失败'); items = checkData(await response.json()); render(); }
+      try { const response = await fetch('./data/items.json',{cache:'no-store'}); if(!response.ok) throw new Error('读取失败'); items = checkData(await response.json()); setupCategoryFilters(); render(); }
       catch (error) { const box = emptyState('暂时无法读取清单', location.protocol === 'file:' ? '请通过网站地址访问，或让助手启动本地预览。直接双击 HTML 无法读取清单。' : '请检查网络，或让助手检查物品清单文件，然后重试。'); box.querySelector('p').classList.add('error'); const retry = node('button','retry','重新读取'); retry.addEventListener('click',load); box.append(retry); console.error(error); }
       finally { $('items').setAttribute('aria-busy','false'); }
     }
